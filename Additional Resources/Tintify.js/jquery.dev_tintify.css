@@ -1,0 +1,10 @@
+/*
+*   Primary style sheet for jQuery Tintify.js 0.1.0
+*/
+
+.overlay-target {
+border: 1px solid red;
+margin: 20px;
+padding: 50px;
+position: relative;
+}
