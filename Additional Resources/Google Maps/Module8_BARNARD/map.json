@@ -1,0 +1,80 @@
+[
+	{
+		"title": "University of California,  Los Angeles",
+		"lat": 34.068823,
+		"lng": -118.444280,
+		"description": "<p>The University of California, Los Angeles (UCLA) is a public research university in the Westwood district of Los Angeles, California, United States.</p>"
+	},
+	{
+		"title": "University of California, Merced",
+		"lat": 37.364124,
+		"lng": -120.429136,
+		"description": "<p>The University of California, Merced (UC Merced or UCM), is the tenth and newest of the University of California campuses. It is located in the San Joaquin Valley in unincorporated Merced County, California, near Merced just north of Fresno, California.</p>"
+	},
+	{
+		"title": "University of California, Berkeley",
+		"lat": 37.872289,
+		"lng": -122.261512,
+		"description": "<p>The University of California, Berkeley (also referred to as Berkeley, UC Berkeley, and Cal)[7] is a public research university located in Berkeley, California.</p>"
+	},
+	{
+		"title": "University of California, San Diego",
+		"lat": 32.879015,
+		"lng": -117.232941,
+		"description": "<p>The University of California, San Diego (also referred to as UC San Diego or UCSD) is a public research university located in the La Jolla neighborhood of San Diego, California, in the United States.[12] The university occupies 2,141 acres (866 ha) near the coast of the Pacific Ocean with the main campus resting on approximately 1,152 acres (466 ha).</p>"
+	},
+	{
+		"title": "University of California, San Francisco",
+		"lat": 37.762117,
+		"lng": -122.456129,
+		"description": "<p>The University of California, San Francisco (UCSF), is a center of health sciences research, patient care, and education devoted solely to graduate education and located in San Francisco, California.</p>"
+	},
+	{
+		"title": "University of California, Santa Barbara",
+		"lat": 34.414618,
+		"lng": -119.851211,
+		"description": "<p>The University of California, Santa Barbara (commonly referred to as UC Santa Barbara or UCSB) is a public research university and one of the 10 campuses of the University of California system. The main campus is located on a 1,022-acre (414 ha) site near Goleta, California, United States, 8 miles (13 km) from Santa Barbara and 100 miles (160 km) northwest of Los Angeles.</p>"
+	},
+	{
+		"title": "University of California, Davis",
+		"lat": 38.539583,
+		"lng": -121.761713,
+		"description": "<p>The University of California, Davis (also referred to as UCD, UC Davis, or Davis), is a public research university and one of the 10 campuses of the University of California (UC) system. It is located in Davis, California, just west of Sacramento,[7] and has the third-largest enrollment in the UC System after UCLA and UC Berkeley.</p>"
+	},
+	{
+		"title": "University of California, Irvine",
+		"lat": 33.640692,
+		"lng": -117.845948,
+		"description": "<p>The University of California, Irvine (UCI, UC Irvine, or Irvine), is a public research university located in Irvine, California, United States, and one of the 10 campuses in the University of California (UC) system. UC Irvine is considered a Public Ivy and offers 80 undergraduate degrees and 98 graduate and professional degrees. </p>"
+	},
+	{
+		"title": "University of California, Santa Cruz",
+		"lat": 36.991428,
+		"lng": -122.062213,
+		"description": "<p>The University of California, Santa Cruz (also known as UC Santa Cruz or UCSC), is a public research university and one of 10 campuses in the University of California system.</p>"
+	},
+	{
+		"title": "University of California, Riverside",
+		"lat": 33.973506,
+		"lng": -117.327265,
+		"description": "<p>The University of California, Riverside (UCR or UC Riverside), is a public research university and one of the 10 general campuses of the University of California system. The main campus sits on 1,900 acres (769 ha) in a suburban district of Riverside, California, United States, with a branch campus of 20 acres (8 ha) in Palm Desert.</p>"
+	},
+	{
+		"title": "California Polytechnic State University, San Luis Obispo",
+		"lat": 35.305461,
+		"lng": -120.661507,
+		"description": "<p>California Polytechnic State University or California Polytechnic State University, San Luis Obispo,[6] also known as Cal Poly San Luis Obispo[6] or Cal Poly,[7] is a public university located in San Luis Obispo, California, United States. Founded in 1901 as a vocational high school, it is currently one of only two polytechnic universities in the 23-member California State University system.</p>"
+	},
+	{
+		"title": "California Polytechnic State University, Pomona",
+		"lat": 34.055897,
+		"lng": -117.823804,
+		"description": "<p>California State Polytechnic University, Pomona (CPP, Cal Poly Pomona, or Cal Poly[Note 1]) is a public polytechnic university located in Pomona, California, United States. It is one of two polytechnics in the 23-member California State University system and one of only seven in all of the United States.</p>"
+	},
+	{
+		"title": "California Institute of Technology",
+		"lat": 34.137786,
+		"lng": -118.126138,
+		"description": "<p>The California Institute of Technology (abbreviated Caltech[6]) is a private doctorate-granting university located in Pasadena, California, United States.</p>"
+	}
+]

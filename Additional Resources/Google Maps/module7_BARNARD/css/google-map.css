@@ -1,0 +1,16 @@
+body, html {
+	 height: 100%;
+	 background-color: #caff51;
+}
+#map {
+	height: 550px;
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1 {
+	text-align: center;
+	font-weight: 600;
+	font-family: sans-serif, helvetica;
+
+}

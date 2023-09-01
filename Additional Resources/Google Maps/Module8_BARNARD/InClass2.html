@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>TEXT</title>
+  <script src="d3/d3.js"></script>
+  <style>
+    .bar {
+      background-color: orange;
+      padding: 5px;
+    }
+    </style>
+</head>
+
+<body>
+  <!-- custom script -->
+  <script>
+  // declare array of values
+  var d = [5, 10, 15, 20, 25];
+  // call d3 in method chaining syntax
+  var s = d3.select("body")
+
+  .append("svg")
+  .attr("width", 500)
+  .attr("height", 500);
+
+  // call the d3 library
+  var bound_objects = s.selectAll("circle")
+    .data( d )
+    .enter()
+    .append("rect")
+    .attr("fill", "orange")
+    .attr("y", function( data ) {
+      return 300 - (data * 10);
+    })
+    .attr("width", 15)
+    .attr("x", function(data, ind){
+      return ind * 20;
+    })
+    .attr("height", function(data) {
+      return data * 10;
+    })
+
+  </script>
+</body>
+
+</html>
