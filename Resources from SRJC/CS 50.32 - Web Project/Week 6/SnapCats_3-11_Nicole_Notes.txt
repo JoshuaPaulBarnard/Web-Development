@@ -1,0 +1,44 @@
+Snap cats notes 3.11
+
+Adopt All on one page scroll down
+Info in each square ie name and special need
+Learn more about button
+
+Home page
+Recycle through images without text with a few that has text
+
+Ernie page
+less map
+Random generated cats every few seconds
+PDF of adoption form automatically fill out Ernie info with his specific —jk he wants a simple contact form
+
+Simple form submit here and we’ll get back to you
+Contact and form button on adopt page
+On education and resources some text to explain how to search ex.,
+Click below or a plus sign
+Pick a category
+Resources
+Send similar function for search
+JavaScript for specific search on page
+Sponsor a cat on the personal adopt and home page goes to general page
+
+Adopt page
+Sponsor a cat to footer
+Special needs a category
+Smaller icons share
+Heart post to social- tool tip?
+Email a friend -tool tips?
+
+
+Ernie
+special needs and find out more semi transparent
+
+Home page
+Front page fuller view of cat cam
+Navbar opaque until scrolling
+
+Cats that have been adopted page 
+no more barn cats
+Deceased don’t list on page
+Rescue group.Org integration
+Click on text lights up to show it’s a link 
