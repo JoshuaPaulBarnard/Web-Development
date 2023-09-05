@@ -1,0 +1,24 @@
+body {
+	background-image: url(http://student.santarosa.edu/~jbarnard/images/background.jpg);
+	color: Black; 
+	text-align: left; 
+	font-family: Times, "Times New Roman", serif;
+}
+
+
+#wrapper {
+	margin:0 auto; 
+	width:80%; 
+	background:green;
+}
+
+#rightcolumn {
+	float:right; 
+	width:150px; 
+}
+
+#leftcolumn {
+	margin-right:150px; 
+	background:OliveDrab; 
+	padding: 10px;
+}

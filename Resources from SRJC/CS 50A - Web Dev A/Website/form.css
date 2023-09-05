@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image: url(http://student.santarosa.edu/~jbarnard/images/background.jpg);
+	color: Black; 
+	text-align: left; 
+	font-family: Times, "Times New Roman", serif;
+}
+
+.return {
+	font-size: 30px; 
+	text-align: center; 
+	font-family: "Arial Black", sans-serif;
+	border-color: green; 
+	border-width: 5px; 
+	border-style: inset; 
+	background-color: green; 
+	background-image:url(http://student.santarosa.edu/~jbarnard/images/return.jpg);
+	width: 500px;
+	height: 100px;
+	padding: 15px; 
+	margin: 15px 0px 0px 10px;
+}
+
+.validators {
+	margin-top: 100px;
+	margin-left: 145px;
+	}
+	
+#nav {
+	position:fixed;
+}
+
+#nav a:hover {
+	background-color: ForestGreen; 
+	font-family: Consolas, "Andale Mono";
+	font-size:20px; 
+}
+
+#wrapper {
+	margin:0 auto; 
+	width:80%; 
+	background:green;
+}
+
+#leftcolumn {
+	float:left; 
+	width:150px; 
+}
+
+#rightcolumn {
+	margin-left:150px; 
+	background:OliveDrab;
+}
+
+#content table {
+caption-side:bottom;
+border-spacing:0px;
+border-collapse:collapse;
+width:550px;
+margin-left: auto;
+margin-right: auto;
+}
+
+table#survey {width:600px;}
+ 
+table#survey td.question  {
+	text-align:right; 
+	vertical-align:top; 
+	background-color:DarkGreen; 
+	padding:4px 12px 4px 4px; 
+	border:1px solid #888822;
+}
+
+table#survey td {
+	background-color:DarkOliveGreen; 
+	vertical-align:top; 
+	padding:4px 4px 4px 12px; 
+	border:1px solid #888822;
+}
+
+legend {
+	font-size: 20px;
+	font-weight: bold;
+}

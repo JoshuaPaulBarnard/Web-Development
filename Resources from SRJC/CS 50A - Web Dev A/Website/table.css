@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image: url(http://student.santarosa.edu/~jbarnard/images/background.jpg);
+	color: Black; 
+	text-align: left; 
+	font-family: Times, "Times New Roman", serif;
+}
+
+.return {
+	font-size: 30px; 
+	text-align: center; 
+	font-family: "Arial Black", sans-serif;
+	border-color: green; 
+	border-width: 5px; 
+	border-style: inset; 
+	background-color: green; 
+	background-image:url(http://student.santarosa.edu/~jbarnard/images/return.jpg);
+	width: 500px;
+	height: 100px;
+	padding: 15px; 
+	margin: 0 auto;
+}
+
+.validators{
+	margin: 0 auto;
+	}
+	
+#menu {
+	margin-top: 5px; 
+	margin: 0 auto; 
+	border-color: green; 
+	border-width: 5px; 
+	border-style: inset; 
+	width: 830px;
+	height: auto;
+	font-family: "Times New Roman";
+	font-size:22px; 
+	text-align: center;
+	color: Black; 
+	background-color: Teal; 
+	background-image:url(http://student.santarosa.edu/~jbarnard/images/return.jpg);
+	}
+
+#menu a:hover {
+	background-color: Green; 
+	font-family: Consolas, "Andale Mono";
+	font-size:20px; 
+}
+
+table {
+	border:thin solid #000000;
+	background-color:olivedrab;
+	caption-side:bottom;
+	margin:10px;
+	border-spacing:0px;
+	border-collapse:collapse;
+	text-align:center; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td, th {border:thin solid #000;
+	padding:8px;}
+
+th {background-color:green;}
+
+.darkrow {
+	background-color: DarkOliveGreen;
+}
