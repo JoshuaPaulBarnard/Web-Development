@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NorCal Traveler's Web Portfolio</title>
+
+  <link rel="stylesheet" type="text/css" href="css/week9.css"/>
+  <!-- load Bootstrap and jQuery 1.12.4 from CDN -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.core.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.default.css" id="toggleCSS" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/audiojs/1.0.1/audio.min.js"></script>
+
+  <script>
+    audiojs.events.ready(function() {
+      var as = audiojs.createAll();
+    });
+
+    $(document).ready(function(){
+      $(".intro-social-buttons").click(function(){
+        alertify.alert("Thank You!!");
+        });
+    });
+
+    $(document).ready(function(){
+      $(".banner-social-buttons").click(function(){
+        alertify.alert("Thank You!!");
+        });
+    });
+
+    $(document).ready(function(){
+      $(".banner").click(function(){
+        $(".banner").hide()
+        });
+    });
+
+    $(document).ready(function(){
+      $("#AboutMe").click(function(){
+        $("#AboutMe").hide()
+        });
+    });
+  </script>
+
+</head>
+
+<body>
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-default navbar-fixed-top topnav" style="background: rgba(192, 192, 192, .975);">
+          <div class="container topnav">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand topnav" href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank">NorCal Traveler</a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li>
+                          <a href="#home">Home</a>
+                      </li>
+                      <li>
+                          <a href="#about">About</a>
+                      </li>
+                      <li>
+                          <a href="#portfolio">Portfolio</a>
+                      </li>
+                     <li>
+                          <a href="#contact">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container -->
+      </nav>
+
+
+      <!-- Header -->
+      <a id="home"></a>
+      <div class="intro-header">
+        <div class="bg-overlay">
+          <div class="container">
+
+
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="intro-message">
+                          <h1>NorCal Traveler's Portfolio</h1>
+                          <h3 style="color:darkgrey;">The Trip of a Thousand Lifetimes Starts with a Single Step</h3>
+                          <hr class="intro-divider">
+                          <ul class="list-inline intro-social-buttons">
+                              <li>
+                                  <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">YouTube</span></a>
+                              </li>
+                              <li>
+                                  <a href="https://www.facebook.com/NorCalTraveler" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-facebook fa-fw"></i> <span class="network-name">FaceBook</span></a>
+                              </li>
+                              <li>
+                                  <a href="https://twitter.com/NorCal_Traveler" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                              </li>
+                              <li>
+                                  <a href="https://github.com/youngstoic" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">GitHub</span></a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+          <!-- /.container -->
+        </div>
+      </div>
+      <!-- /.intro-header -->
+
+   <!-- Page Content -->
+
+  	<a  id="about"></a>
+      <div class="content-section-a" id="AboutMe">
+        <div class="bg-overlay2">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+
+                      <div class="clearfix"></div>
+                    <h2 class="section-heading">A Northern Californian Traveling The World</h2>
+                    <br />
+                      <p class="lead">
+                        Here are my photos and videos from my travels around the world!<br />
+                        I am currently transitioning to becoming a web developer and this is a test portfolio site.
+                      </p>
+                  </div>
+                  <div class="col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-12 col-xs-12 collapse navbar-collapse">
+                      <img class="img-circle img-responsive" src="http://student.santarosa.edu/~jbarnard/images/me_okayama_castle.jpg" alt="portfolio pic" height="256" width="256">
+                  </div>
+              </div>
+
+          </div>
+          <!-- /.container -->
+        </div>
+       </div>
+
+       <!-- Portfolio Grid Section -->
+     <a  id="portfolio"></a>
+      <section class="bg-light-gray bounds">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <h2 class="section-heading">Web Portfolio.</h2>
+                      <h3 id="below-section" class="section-subheading text-muted">Below you would normally find my most best and more recent work.<br />Currently it just contains thumbnails of some pictures from Kosan-Ji Temple in Japan.</h3><br />
+                  </div>
+              </div>
+            <!-- Portfolio img1 -->
+              <div class="row">
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 portfolio-item">
+                      <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="portfolio-link" data-toggle="modal">
+                          <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                  <i class="fa fa-fire fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="thumbs/CS50B_Week9_Thumb_1.png" class="img-responsive" alt="">
+                      </a>
+                      <div class="portfolio-caption" id="thumb1">
+                          <h4>Sample Thumbnail #1</h4>
+                          <p class="small-text text-muted">First Sample</p>
+                      </div>
+                  </div>
+                <!-- End of Portfolio img1 -->
+
+                <!-- Portfolio img2 -->
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 portfolio-item portfolio2">
+                      <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" class="portfolio-link" target="_blank" data-toggle="modal">
+                          <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                  <i class="fa fa-fire fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="thumbs/CS50B_Week9_Thumb_2.png" class="img-responsive" alt="">
+                      </a>
+                      <div class="portfolio-caption" id="thumb2">
+                        <h4>Sample Thumbnail #2</h4>
+                        <p class="small-text text-muted">Second Sample</p>
+                      </div>
+                  </div>
+                <!-- End of Portfolio img2 -->
+
+                <!-- Portfolio img3 -->
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 portfolio-item">
+                      <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="portfolio-link" data-toggle="modal">
+                          <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                  <i class="fa fa-fire fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="thumbs/CS50B_Week9_Thumb_3.png" class="img-responsive" alt="">
+                      </a>
+                      <div class="portfolio-caption" id="thumb3">
+                        <h4>Sample Thumbnail #3</h4>
+                        <p class="small-text text-muted">Third Sample</p>
+                      </div>
+                  </div>
+                <!-- End of Portfolio img3 -->
+
+                <!-- Portfolio img4 -->
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 portfolio-item">
+                      <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="portfolio-link" data-toggle="modal">
+                          <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                  <i class="fa fa-fire fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="thumbs/CS50B_Week9_Thumb_4.png" class="img-responsive" alt="">
+                      </a>
+                      <div class="portfolio-caption" id="thumb4">
+                        <h4>Sample Thumbnail #4</h4>
+                        <p class="small-text text-muted">Fourth Sample</p>
+                      </div>
+                  </div>
+                <!-- End of Portfolio img4 -->
+
+                <!-- Portfolio img5 -->
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 portfolio-item">
+                      <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="portfolio-link" data-toggle="modal">
+                          <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                  <i class="fa fa-fire fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="thumbs/CS50B_Week9_Thumb_5.png" class="img-responsive" alt="">
+                      </a>
+                      <div class="portfolio-caption" id="thumb5">
+                        <h4>Sample Thumbnail #5</h4>
+                        <p class="small-text text-muted">Fifth Sample</p>
+                      </div>
+                  </div>
+                <!-- End of Portfolio img5 -->
+
+                <!-- Portfolio img6 -->
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 portfolio-item">
+                      <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="portfolio-link" data-toggle="modal">
+                          <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                  <i class="fa fa-fire fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="thumbs/CS50B_Week9_Thumb_6.png" class="img-responsive" alt="">
+                      </a>
+                      <div class="portfolio-caption" id="thumb6">
+                        <h4>Sample Thumbnail #6</h4>
+                        <p class="small-text text-muted">Sixth Sample</p>
+                      </div>
+                  </div>
+                <!-- End of Portfolio img6 -->
+
+                <!-- Portfolio img7 -->
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 portfolio-item">
+                      <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="portfolio-link" data-toggle="modal">
+                          <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                  <i class="fa fa-fire fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="thumbs/CS50B_Week9_Thumb_7.png" class="img-responsive" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Sample Thumbnail #7</h4>
+                        <p class="small-text text-muted">Seventh Sample</p>
+                      </div>
+                  </div>
+                <!-- End of Portfolio img7 -->
+
+                <!-- Portfolio img8 -->
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 portfolio-item">
+                      <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="portfolio-link" data-toggle="modal">
+                          <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                  <i class="fa fa-fire fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="thumbs/CS50B_Week9_Thumb_8.png" class="img-responsive" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Sample Thumbnail #8</h4>
+                        <p class="small-text text-muted">Eigth Sample</p>
+                      </div>
+                  </div>
+                <!-- End of Portfolio img8 -->
+
+                <!-- Portfolio img9 -->
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 portfolio-item">
+                      <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="portfolio-link" data-toggle="modal">
+                          <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                  <i class="fa fa-fire fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="thumbs/CS50B_Week9_Thumb_9.png" class="img-responsive" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Sample Thumbnail #9</h4>
+                        <p class="small-text text-muted">Ninth Sample</p>
+                      </div>
+                  </div>
+                <!-- End of Portfolio img9 -->
+
+                <!-- Portfolio img10 -->
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 portfolio-item">
+                      <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="portfolio-link" data-toggle="modal">
+                          <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                  <i class="fa fa-fire fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="thumbs/CS50B_Week9_Thumb_10.png" class="img-responsive" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Sample Thumbnail #10</h4>
+                        <p class="small-text text-muted">Tenth Sample</p>
+                      </div>
+                  </div>
+                <!-- End of Portfolio img10 -->
+
+                <!-- Portfolio img11 -->
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 portfolio-item">
+                      <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="portfolio-link" data-toggle="modal">
+                          <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                  <i class="fa fa-fire fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="thumbs/CS50B_Week9_Thumb_11.png" class="img-responsive" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Sample Thumbnail #11</h4>
+                        <p class="small-text text-muted">Eleventh Sample</p>
+                      </div>
+                  </div>
+                <!-- End of Portfolio img11 -->
+
+                <!-- Portfolio img12 -->
+                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 portfolio-item">
+                      <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="portfolio-link" data-toggle="modal">
+                          <div class="portfolio-hover">
+                              <div class="portfolio-hover-content">
+                                  <i class="fa fa-fire fa-3x"></i>
+                              </div>
+                          </div>
+                          <img src="thumbs/CS50B_Week9_Thumb_12.png" class="img-responsive" alt="">
+                      </a>
+                      <div class="portfolio-caption">
+                        <h4>Sample Thumbnail #12</h4>
+                        <p class="small-text text-muted">Twelve Sample</p>
+                      </div>
+                  </div>
+                <!-- End of Portfolio img12 -->
+              </div>
+          </div>
+      </section>
+
+  	<a  id="contact"></a>
+      <div class="banner">
+        <div class="bg-overlay4">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="connect">Check out some of my latest videos at <a class="link-footer" target="_blank" href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA/sub_confirmation=1">my YouTube Channel.</a></h2>
+                  </div>
+                <br />
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <embed width="560" height="315" src="https://www.youtube.com/embed/2M3ruw20onk" frameborder="0" allowfullscreen>
+                </div>
+
+                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCk2CHg_EZvk98IA3KaHqzHA" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">YouTube</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/NorCalTraveler" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-facebook fa-fw"></i> <span class="network-name">FaceBook</span></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/NorCal_Traveler" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/youngstoic" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">GitHub</span></a>
+                        </li>
+                    </ul>
+                  </div>
+
+          </div>
+          <!-- /.container -->
+      </div>
+  </div>
+  </div>
+      <!-- /.banner -->
+
+      <!-- Footer -->
+      <footer>
+
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <ul class="list-inline">
+                          <li>
+                              <a href="#">Home</a>
+                          </li>
+                          <li class="footer-menu-divider">&sdot;</li>
+                          <li>
+                              <a href="#about">About</a>
+                          </li>
+                          <li class="footer-menu-divider">&sdot;</li>
+                          <li>
+                              <a href="#portfolio">Portfolio</a>
+                          </li>
+                          <li class="footer-menu-divider">&sdot;</li>
+                          <li>
+                              <a href="#contact">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+  <div style="display:none;"><audio src="audio/naturesounds.mp3" preload="auto" autoplay="autoplay"></audio></div>
+
+</body>
+
+</html>

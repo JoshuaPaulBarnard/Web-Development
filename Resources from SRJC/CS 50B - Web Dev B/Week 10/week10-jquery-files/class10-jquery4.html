@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery Example: Working with Dimensions</title>
+	<!-- load bootstrap css via cdn -->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- load jquery js via cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- load bootstrap js via cdn -->
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h2>Display width and height in pixels</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-2">2</div>
+			<div class="col-xs-4">4</div>
+			<div class="col-xs-6">6</div>
+		</div>
+	</div>
+	<!-- custom javascript using jquery to handle dynamic search filtering -->
+	<script>
+		// create event handler for user clicking on any div
+		$("div").click(
+			function() {
+				// get width of element that was clicked using $(this)
+				var w = $(this).width();
+				// get height of element that was clicked using $(this)
+				var h = $(this).height();
+				// replace contents with dimensions
+				$(this).html( w + "px wide " + h + "px high" );
+				// ensure click doesn't replace document content with returned results
+				return false;
+			}
+		);
+	</script>
+</body>
+</html>

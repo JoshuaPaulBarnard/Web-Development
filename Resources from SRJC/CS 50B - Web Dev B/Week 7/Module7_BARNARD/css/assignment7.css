@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image: url(http://student.santarosa.edu/~jbarnard/images/background.jpg);
+	color: Black;
+	text-align: left;
+	font-family: Times, "Times New Roman", serif;
+}
+
+#menu {
+	margin-top: 5px;
+	margin: 0 auto;
+	border-color: green;
+	border-width: 5px;
+	border-style: inset;
+	padding-right:25px;
+	padding-top:5px;
+	width: 650px;
+	height: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:22px;
+	text-align: center;
+	background-image:url(http://student.santarosa.edu/~jbarnard/images/return.jpg);
+	}
+
+#menu a:hover {
+	background-color: Green;
+	font-family: Consolas, "Andale Mono";
+	font-size:20px;
+}
+
+#menu ul {list-style-type:none;}
+
+#menu li {display:inline;}
+
+#menu a {text-decoration:none; padding-right:10px;}
+
+footer{
+	background-color:olivedrab;
+	font-family: "Lucida Console", Monaco, monospace;
+	text-align:center;
+	margin-top: 5px;
+	margin: 0 auto;
+	border-color: black;
+	border-width: 5px;
+	border-style: solid;
+	padding-right:25px;
+	padding-top:5px;
+	width: 450px;
+	height: auto;
+}
+
+#p1c1 {
+	text-align: center;
+	font-size: 26px;
+	font-family: cursive;
+	color: navy;
+	border-color: green;
+	border-width: 10px;
+	border-style: groove;
+}
+
+#p1c1 small {
+	color: DarkSlateGray;
+	font-family:monospace;
+}
+
+#p1c2 {
+	text-align: center;
+}
+
+#p1c3 p {
+	text-align: center;
+}
+
+#p1c3 table {
+caption-side:bottom;
+border-spacing:0px;
+border-collapse:collapse;
+width:550px;
+margin-left: auto;
+margin-right: auto;
+}
+
+table#survey {width:600px;}
+
+table#survey td.question  {
+	text-align:right;
+	vertical-align:top;
+	background-color:DarkGreen;
+	padding:4px 12px 4px 4px;
+	border:1px solid #888822;
+}
+
+table#survey td {
+	background-color:DarkOliveGreen;
+	vertical-align:top;
+	padding:4px 4px 4px 12px;
+	border:1px solid #888822;
+}
+
+#p2 {
+	background-image: url(http://www.zingerbug.com/Backgrounds/background_images/rainbow_starry_sky_glitter_background_seamless.gif);
+}
+
+#p2c1 {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+	color:transparent;
+  -webkit-background-clip: text;
+	text-align:center;
+	font-size: 30px;
+	font-family: cursive;
+}
+
+#p2c2 {
+
+}
+
+#p2c3 {
+	font-size: 22px;
+	font-family: fantasy;
+	color: white;
+	text-align: center;
+}
+
+#p3c1 {
+	text-indent: 50px;
+	font-family: serif;
+	color: blue;
+}
+
+#p3c2 {
+	text-align: center;
+}
+
+#p3c3 {
+	font-size: 18px;
+	color: navy;
+}
+
+#p3c3 strong {
+	font-size: 20px;
+	color: blue;
+}
+
+#p3c4 {
+	color: orange;
+	font-family: cursive;
+}
+
+#p3c5 {
+	text-align: center;
+	color: green;
+	font-family: fantasy;
+}
+
+#p4c1 {
+	color: orange;
+}
+
+#p4c2 {
+	text-align: center;
+}
+
+#p4c3 {
+	background-color: red;
+	color: white;
+}
+
+#p4c3 strong {
+	font-size: 22px;
+	font-family: cursive;
+	color: olivedrab;
+}
+
+#p4c4 {
+	background-color: gold;
+	font-family: fantasy;
+}
+
+#p4c5 {
+	text-align: center;
+	border: solid;
+	border-color: black;
+	font-family: serif;
+}
+
+#p5c1 {
+
+}
+
+#p5c2 {
+
+}
+
+#p5c3 {
+	border-style: groove;
+	border-color: green;
+	border-width: 5px;
+	color: blue;
+	background-color: green;
+	margin-top: 15px;
+	padding-right: 5px;
+}
+
+#p5c3 h3 {
+	text-align: center;
+}
+
+#p5c4 {
+	text-align: center;
+	border-style: ridge;
+	border-color: orange;
+	border-width: 5px;
+	margin-top: 15px;
+	padding-left: 5px;
+	background-color: orange;
+	color: papayawhip;
+}

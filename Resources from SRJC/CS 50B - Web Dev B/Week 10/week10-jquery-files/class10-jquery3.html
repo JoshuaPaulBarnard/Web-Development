@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery Example: Random Selections</title>
+	<!-- load bootstrap css via cdn -->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- load jquery js via cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- load bootstrap js via cdn -->
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Display random content</h2>
+				<!-- container to use for display of random element -->
+				<div id="billboard">What?</div>
+				<!-- list containing content items for display-->
+				<ul id="itemlist">
+					<li>Apple</li>
+					<li>Banana</li>
+					<li>Carrot</li>
+					<li>Date</li>
+					<li>Endive</li>
+					<li>Fig</li>
+					<li>Grape</li>
+					<li>Honeydew melon</li>
+					<li>Iceberg lettuce</li>
+					<li>Jerusalem artichoke</li>
+					<li>Kiwi</li>
+					<li>Lemon</li>
+					<li>Mango</li>
+					<li>Nectarine</li>
+					<li>Orange</li>
+					<li>Pear</li>
+					<li>Quince</li>
+					<li>Radish</li>
+					<li>Strawberry</li>
+					<li>Tomato</li>
+					<li>Uglifruit</li>
+					<li>Victoria plum</li>
+					<li>Watermelon</li>
+					<li>Yam</li>
+					<li>Zucchini</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- custom javascript using jquery to handle dynamic search filtering -->
+	<script>
+		// hide item with id="itemlist" when script first runs
+		$("#itemlist").hide();
+		
+		// create event handler for user pointing at billboard div
+		$("#billboard").hover(
+			function() {
+				// get total count of children in itemlist
+				var t = $("#itemlist").children().length;
+				// get random number 0-t with JavaScript Math object's random() & floor()
+				var r = Math.floor( Math.random() * t );
+				// get random child list item contents
+				var c = $("#itemlist").children().eq( r ).html() 
+				// replace billboard contents  
+				$("#billboard").html( c );
+			}
+		);
+	</script>
+</body>
+</html>

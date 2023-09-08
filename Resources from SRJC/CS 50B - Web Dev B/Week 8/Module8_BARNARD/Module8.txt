@@ -1,0 +1,45 @@
+User Testing:
+Shirley Moore, 67, Female, on October 15th at 6:45pm
+My mom tried testing out the site and she immediately got lost on the sarcastic clap youtube video clip, then just started watching youtube videos.  By the time I got her back to my site to go to the other pages she didn't care too much, then just started watching youtube videos again.
+
+
+Dominic Dluzak, Oct 10 at 2:37pm
+This website is pretty well done to the basics. However, the navigation will not work for some reason and should change its look from each page. Also there is not much color to the pages. I would suggest fixing these things. All and all great work!
+
+
+Matt Schafer, Oct 16 at 7:01pm
+Hello Josh! A nice looking website! I really like the backgrounds and posts you added. I also like that you added a bit humor too. I do think a couple of your pages could use some work, like the rainbows page if you could adjust the sizes of the images in the slideshow. Is there some sort of main theme to your site. What do each of your pages have in common. Overall, a great website, Josh!
+
+
+
+Changes Made:
+
+I added an orange gradient overlay to my background to help add more color, and give it a nice autumnly feel.  This was based off of Dominic Dluzak's suggestions.
+
+I increased the size of the font on the rainbows page thanks to Matt Schafer's suggestions.
+
+I changed the sarcastic clap from a youtube clip to a gif based off of the experiences of Shirley Moore's user testing.
+
+I wrote up some text on the home page explaining the nature of the website and what to do based off of the suggestions of Shirley Moore and Matt Schafer.
+
+All pages load all JS/bootstrap/jquery from CDN's.
+
+
+User Testing Outcomes:
+1)  My site needs an actual meaning and reason, Improve site harmony and unity.
+
+2)  Make site navigation clearer and more obvious.
+
+
+
+URL's:
+
+http://student.santarosa.edu/~jbarnard/page1-8.html
+
+http://student.santarosa.edu/~jbarnard/page2-8.html
+
+http://student.santarosa.edu/~jbarnard/page3-8.html
+
+http://student.santarosa.edu/~jbarnard/page4-8.html
+
+http://student.santarosa.edu/~jbarnard/page5-8.html

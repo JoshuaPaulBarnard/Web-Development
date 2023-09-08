@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery UI Accordion</title>
+  <link rel="stylesheet" href="../jquery-ui-1.11.1/jquery-ui.css"/>
+  <script src="../jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+  <script src="../jquery-ui-1.11.1/jquery-ui.js"></script>
+
+  <script>
+    $(document).ready(function()) {
+      // build a basic accordion widget
+      $("#dialog1").dialog(
+        {
+          autoOpen: false
+        }
+      );
+    });
+  </script>
+</head>
+<body>
+  <button onclick="$('#dialog1').dialog('open');">Open Dialog</button>
+
+  <div id="dialog1" title="Dialog Title">
+    <p>This is the dialog content</p>
+  </div>
+</body>
+</html>

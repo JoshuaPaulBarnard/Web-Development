@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery Example: Virtual Pagination</title>
+	<!-- load bootstrap css via cdn -->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- load jquery js via cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- load bootstrap js via cdn -->
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Paginated list items</h2>
+				<!-- list containing dynamically-paginated items -->
+				<ul id="itemlist">
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+					<li>Item 5</li>
+					<li>Item 6</li>
+					<li>Item 7</li>
+					<li>Item 8</li>
+					<li>Item 9</li>
+					<li>Item 10</li>
+					<li>Item 11</li>
+					<li>Item 12</li>
+					<li>Item 13</li>
+					<li>Item 14</li>
+					<li>Item 15</li>
+					<li>Item 16</li>
+					<li>Item 17</li>
+					<li>Item 18</li>
+					<li>Item 19</li>
+					<li>Item 20</li>
+					<li>Item 21</li>
+					<li>Item 22</li>
+					<li>Item 23</li>
+					<li>Item 24</li>
+					<li>Item 25</li>
+				</ul>
+				<!-- bootstrap pager -->
+				<ul class="pager">
+					<li><a href="#" id="page-prev">Previous</a></li>
+					<li><a href="#" id="page-next">Next</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- custom javascript using jquery to handle dynamic pagination and pager -->
+	<script>
+		// keep track of page showing
+		var page = 0;
+		
+		// function to show / hide sets of 10 list items base on page number
+		function paginate() {
+			// hide all items
+			$('#itemlist').children().hide();
+			// show only items in range
+			$('#itemlist').children().slice( page * 10, page * 10 + 9).show();
+		}
+		
+		// call paginate() first time to hide items
+		paginate();
+		
+		// quoted text in parens after $ call contains selector for first list item
+		$("#page-prev").click(
+			function() {
+				// code inside function's {} runs when element matching selector clicked
+				page = page - 1;
+				if ( page < 0 ) page = 0;
+				paginate();
+			}
+		);
+		$("#page-next").click(
+			function() {
+				page = page + 1;
+				if ( page * 10 > $('#itemlist').children().length ) page = page - 1;
+				paginate();
+			}
+		);
+	</script>
+</body>
+</html>

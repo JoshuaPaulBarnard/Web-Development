@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image: url(http://student.santarosa.edu/~jbarnard/images/background.jpg);
+	color: Black;
+	text-align: left;
+	font-family: Times, "Times New Roman", serif;
+}
+
+#menu {
+	margin-top: 5px;
+	margin: 0 auto;
+	border-color: green;
+	border-width: 5px;
+	border-style: inset;
+	padding-right:25px;
+	padding-top:5px;
+	width: 250px;
+	height: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:22px;
+	text-align: center;
+	background-image:url(http://student.santarosa.edu/~jbarnard/images/return.jpg);
+	}
+
+#menu a:hover {
+	background-color: Green;
+	font-family: Consolas, "Andale Mono";
+	font-size:20px;
+}
+
+#menu ul {list-style-type:none;}
+
+#menu li {display:inline;}
+
+#menu a {text-decoration:none; padding-right:10px;}
+
+footer{
+	background-color:olivedrab;
+	font-family: "Lucida Console", Monaco, monospace;
+	text-align:center;
+	margin-top: 5px;
+	margin: 0 auto;
+	border-color: black;
+	border-width: 5px;
+	border-style: solid;
+	padding-right:25px;
+	padding-top:5px;
+	width: 450px;
+	height: auto;
+}
+
+.col1{
+	background-color:purple;
+	font-family: Impact, Charcoal, sans-serif;
+	text-align: center;
+}
+
+.col2{
+	background-color:green;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	text-align: center;
+}
+
+.col3{
+	background-color:orange;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align: center;
+}

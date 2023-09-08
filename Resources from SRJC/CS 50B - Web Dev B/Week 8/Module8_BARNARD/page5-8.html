@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hate Mail</title>
+
+  <link rel="stylesheet" type="text/css" href="css/assignment8.css"/>
+  <!-- load Bootstrap and jQuery 1.12.4 from CDN -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.core.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.default.css" id="toggleCSS" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alertify.js/0.3.11/alertify.js"></script>
+
+</head>
+
+<body style="font-size: 16px;">
+
+  <header>
+    <div id="menu"><nav><ul>
+      <li><a href="page1-8.html" style="color:black;"><strong>Home</strong></a></li>
+      <li><a href="page2-8.html" style="color:black;">| Rainbows</a></li>
+      <li><a href="page3-8.html" style="color:black;">| China 1</a></li>
+      <li><a href="page4-8.html" style="color:black;">| China 2</a></li>
+      <li><a href="page5-8.html" style="color:black;">| Comments</a></li>
+      </ul></nav></div> 
+  </header>
+
+  <script>
+    $('document').ready(alertify.alert("Page Loaded Successfully") );
+
+    function TooLongFunc()
+    {
+      alertify.alert("You have been on this site for too long!  Go Get A Life!!");
+    }
+
+    $('document').ready( setTimeout(TooLongFunc, 540000) );
+  </script>
+
+  <div class="container visible-xs-block visible-sm-block visible-md-block visible-lg-block">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" id="p5c1">
+        <embed width="560" height="315" src="https://www.youtube.com/embed/fvQLMLyAbjs" frameborder="0" allowfullscreen>
+      </div>
+      <div class="clearfix visible-xs-block"></div><div class="clearfix visible-sm-block"></div><div class="clearfix visible-md-block"></div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6" id="p5c2">
+        <img src="images/hate_mail.png" width="560" height="315" alt="Hate Mail">
+      </div>
+      <div class="clearfix visible-xs-block"></div><div class="clearfix visible-sm-block"></div><div class="clearfix visible-md-block"></div><div class="clearfix visible-lg-block"></div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="p5c3">
+        <h3>Comments</h3>
+        <p>"You have a mouth like pitbull" -Some Loser Online</p>
+      </div>
+      <div class="clearfix visible-xs-block"></div><div class="clearfix visible-sm-block"></div>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="p5c4">
+        <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#contactModal">
+          <span class="glyphicon glyphicon-envelope"></span>Contact
+        </button>
+        <p>Click Here to get immediate, personalized, well thought out responses to any of your questions, thoughts, comments, concerns, interests, queries, or ideas.</p>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 style="color:black" class="modal-title">Thank You</h4>
+              </div>
+              <div class="modal-body">
+                <p style="color:black">You are truly one of the best ones.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <br /><br />
+
+  <footer>
+    <div class="contact">
+      <p>Joshua Barnard<br />
+        Assignment 8<br />
+        October 16th, 2016</p>
+    </div>
+
+    <div id="validators"> <br />
+  	   <p> <a href="http://validator.w3.org/check?uri=referer"><img src="http://student.santarosa.edu/~jbarnard/images/w3c_html.png" alt="Image linking to w3c Validator page" title="This Page is Valid HTML5." height="31" width="88" /></a>
+         <a href="http://validator.w3.org/check?uri=referer"><img src="http://student.santarosa.edu/~jbarnard/images/w3c_xhtml.png" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+         <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://student.santarosa.edu/~jbarnard/images/vcss-blue.gif" alt="Valid CSS!" /></a>
+       </p>
+     </div>
+  </footer>
+
+</body>
+
+</html>

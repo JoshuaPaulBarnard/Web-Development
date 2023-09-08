@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comic World</title>
+  <link rel="stylesheet" href="css/week10.css">
+	<!-- load bootstrap and jquery via cdn -->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $("#p1").click(function(){
+        $("#p1").hide()
+      });
+    });
+
+    $(document).ready(function(){
+      $("#p2").click(function(){
+        $("#p2").hide()
+      });
+    });
+
+    $(document).ready(function(){
+      $("#p3").click(function(){
+        $("#p3").hide()
+      });
+    });
+
+    $(document).ready(function(){
+      $("#p4").click(function(){
+        $("#p4").hide()
+      });
+    });
+
+    $(document).ready(function(){
+      $("#p5").click(function(){
+        $("#p5").hide()
+      });
+    });
+
+    $(document).ready(function(){
+      $("#p6").click(function(){
+        $("#p6").hide()
+      });
+    });
+
+    $(document).ready(function(){
+      $("#p7").click(function(){
+        $("#p7").hide()
+      });
+    });
+
+    $(document).ready(function(){
+      $("#p8").click(function(){
+        $("#p8").hide()
+      });
+    });
+
+    $(document).ready(function(){
+      $("#p9").click(function(){
+        $("#p9").hide()
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <article class="comic">
+    <div class="panel" id="p1">
+      <p class="text top-left">In This Weeks Adventures</p>
+      <p class="text bottom-right">...something amazing is about to happen</p>
+    </div>
+    <div class="panel" id="p2">
+      <p class="text top-left">When suddenly</p>
+      <p class="text bottom-right">An Enemy Appears!</p>
+    </div>
+    <div class="panel" id="p3" style="color: red; font-weight: bold">
+      <p class="speech" id="billboard">WHAM!</p>
+        <ul id="itemlist">
+          <li>ZAM!</li>
+          <li>Ka-Boom!</li>
+          <li>SMOK!</li>
+          <li>AIEE!</li>
+          <li>BAM!</li>
+          <li>AWKKKK!</li>
+          <li>BAM!</li>
+          <li>BANG!</li>
+          <li>BIFF!</li>
+          <li>BLOOP!</li>
+          <li>BLURP!</li>
+          <li>BOFF!</li>
+          <li>BONK!</li>
+          <li>BOINK!</li>
+          <li>CLANK!</li>
+          <li>CLASH!</li>
+          <li>CRAAACK!</li>
+          <li>CRUNCH!</li>
+          <li>FLRBBBB!</li>
+          <li>KAPOW!</li>
+          <li>GLIPPP</li>
+          <li>GLURP!</li>
+          <li>KLUNK!</li>
+          <li>KRUNCH!!</li>
+          <li>OOOFF!</li>
+        </ul>
+    </div>
+    <div class="panel" id="p4">
+      <p class="text top-left">Our Valient Hero Overcomes His Enemies</p>
+      <p class="text bottom-right">... Against All Odds.</p>
+    </div>
+    <div class="panel" id="p5">
+      <p class="text top-left">He Continues on his Adventures</p>
+    </div>
+    <div class="panel" id="p6">
+      <p class="text top-left">And Continues Down The Only Road He Knows</p>
+    </div>
+    <div class="panel" id="p7">
+      <p class="text top-left">When he comes across a bar</p>
+    </div>
+    <div class="panel" id="p8">
+      <p class="text top-left">And Has a Drink</p>
+      <p class="text bottom-right">... Or 20.</p>
+    </div>
+    <div class="panel" id="p9">
+      <p class="speech" style="font-weight:bold; color:Chartreuse ">Hooray!!</p>
+      <p class="text bottom-right">THE END</p>
+    </div>
+  </article>
+
+  <script>
+		// hide item with id="itemlist" when script first runs
+		$("#itemlist").hide();
+
+		// create event handler for user pointing at billboard div
+		$("#billboard").hover(
+			function() {
+				// get total count of children in itemlist
+				var t = $("#itemlist").children().length;
+				// get random number 0-t with JavaScript Math object's random() & floor()
+				var r = Math.floor( Math.random() * t );
+				// get random child list item contents
+				var c = $("#itemlist").children().eq( r ).html()
+				// replace billboard contents
+				$("#billboard").html( c );
+			}
+		);
+	</script>
+
+</body>
+</html>

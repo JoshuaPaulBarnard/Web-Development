@@ -1,0 +1,31 @@
+http://student.santarosa.edu/~jbarnard/page1-7.html
+Plugins:  jQuery UI - Button.  Event Triggered by Click
+	  audio.js  - Added autoplay applause.wav when page is loaded.
+	  jQuery Validation - Used for form validation.
+	  Alertify - Pops up an alert dialog box to inform the visitor that the page loaded successfullly.
+Bootstap/jquery load from CDN
+
+
+
+
+http://student.santarosa.edu/~jbarnard/page2-7.html
+Plugins:  jQuery UI - Button.  Event Triggered by Click
+	 Textillate - Animated the Text below the button.
+Bootstap/jquery load from CDN
+
+
+
+http://student.santarosa.edu/~jbarnard/page3-7.html
+All bootstap/jquery load from CDN's
+
+
+
+http://student.santarosa.edu/~jbarnard/page4-7.html
+All Bootstap/jquery load from CDN
+
+
+
+http://student.santarosa.edu/~jbarnard/page5-7.html
+Plugins:  jQuery UI - Button & Modal.  Event Triggered by Click.
+	  Alertify - Pops up an alert dialog box to inform the visitor that the page loaded successfullly, and when they have been on the site for too long.
+All Bootstap/js/jquery load from CDN

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery Example: Search Filtering</title>
+	<!-- load bootstrap css via cdn -->
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- load jquery js via cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- load bootstrap js via cdn -->
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Filtering list with search text</h2>
+				<!-- form input for user-entered filter text -->
+				<form>
+					<input id="filtertext">
+				</form>
+				<!-- list containing searched items -->
+				<ul id="itemlist">
+					<li>Apple</li>
+					<li>Banana</li>
+					<li>Carrot</li>
+					<li>Date</li>
+					<li>Endive</li>
+					<li>Fig</li>
+					<li>Grape</li>
+					<li>Honeydew melon</li>
+					<li>Iceberg lettuce</li>
+					<li>Jerusalem artichoke</li>
+					<li>Kiwi</li>
+					<li>Lemon</li>
+					<li>Mango</li>
+					<li>Nectarine</li>
+					<li>Orange</li>
+					<li>Pear</li>
+					<li>Quince</li>
+					<li>Radish</li>
+					<li>Strawberry</li>
+					<li>Tomato</li>
+					<li>Uglifruit</li>
+					<li>Victoria plum</li>
+					<li>Watermelon</li>
+					<li>Yam</li>
+					<li>Zucchini</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- custom javascript using jquery to handle dynamic search filtering -->
+	<script>
+		// create event handler for user changes filter text input value
+		$("#filtertext").change(
+			function() {
+				// save jquery selector text for finding matches for X
+				var t = "li:contains('X')";
+				// use user-entered filter text instead of X
+				t = t.replace( "X", $("#filtertext").val() );
+				// hide all child list items
+				$('#itemlist').children().css('display','none');
+				// show children list items with content matching filter text
+				$('#itemlist').children().filter( t ).css('display','block');
+			}
+		);
+	</script>
+</body>
+</html>
