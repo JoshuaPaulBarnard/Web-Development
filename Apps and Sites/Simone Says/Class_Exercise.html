@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Example</title>
+    <!-- load jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <!-- style element to hold css -->
+    <style>
+      body{
+        background-color: #333;
+        color: #fff;
+      }
+
+      .back {
+        position: absolute;
+        top: 170px;
+        width: 640px;
+        height: 640px;
+        z-index: 0;
+        background-color: #000;
+        border-radius: 310px;
+      }
+
+      .pad {
+        width: 300px;
+        height: 300px;
+        float: left;
+        z-index: 1;
+        margin: 10px;
+        opacity: 0.6;
+      }
+
+      .shape1 {
+        background-color: green;
+        border-top-left-radius: 300px;
+      }
+
+      .shape2 {
+        background-color: red;
+        border-top-right-radius: 300px;
+      }
+
+      .shape3 {
+        background-color: yellow;
+        border-bottom-left-radius: 300px;
+      }
+    </style>
+
+    <script src="script.js"></script>
+
+  </head>
+
+  <body>
+    <!-- game board is 3 quarters of a circle -->
+    <div class="wrapper">
+
+      <!-- background -->
+      <div class="back">
+
+        <div class="pad shape1" data-pad="1">
+        </div>
+
+        <div class="pad shape2" data-pad="2">
+        </div>
+
+        <div class="pad shape3" data-pad="3">
+        </div>
+
+        <div class="circle"></div>
+
+      </div>
+
+      <!-- level + score -->
+      <div class="level">
+        <h2>Level: 1</h2>
+      </div>
+      <div class="score">
+        <h2>Score: 0</h2>
+      </div>
+
+      <div class="">
+
+      </div>
+
+    </div>
+  </body>
+</html>

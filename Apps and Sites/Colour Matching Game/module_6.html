@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" />
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Color Match Game</title>
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Load jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Load jQuery UI -->
+  <link rel="stylesheet" href="css/jquery-ui.css" />
+  <script src="js/jquery-ui.js"></script>
+
+  <!-- Load Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Load tintify.js -->
+  <script src="js/jquery.tintify.js"></script>
+
+  <!-- Load page styles -->
+  <link rel="stylesheet" type="text/css" href="css/module_6.css" />
+  <script src="js/module_6.js"></script>
+
+  <!-- Load miscellaneous jQuery plugin created for this assignment -->
+  <script src="js/module_6_plugins.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container visible-xs-block visible-sm-block visible-md-block visible-lg-block">
+    <div class="page-header">
+      <h1 style="text-align:center;">The Color Match Game!</h1></div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div id="WinDialog" title="You Win!" style="text-align:center;">
+          <p>Congratulations!<br />You Successfully Matched All The Colors!</p></div>
+        <div id="colorbox"></div>
+        <div id="drop-zones"></div>
+
+      <!-- Load The Color Match Game -->
+      <script type="text/javascript" src="js/Color_Match_Game.js"></script>
+
+      </div><div class="clearfix visible-xs-block"></div><div class="clearfix visible-sm-block"></div>
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <br /><br /><br /><br />
+        <h2 style="text-align:center">Your Progress:</h2>
+        <div id="progBar" class="progressbar"></div>
+        <br /><br /><br /><br /><br /><br />
+
+        <h2 style="text-align:center">About The Game</h2>
+        <br />
+        <div id="about">
+            <h3 style="text-align:center;">Color-Match Game</h3>
+            <div>
+                <p style="text-align:center;">
+                  <br />To play this game, please match the color block with the colors name, by dragging the color block over the block containing the colors name.
+                </p>
+            </div>
+            <h3 style="text-align:center;">Author</h3>
+            <div>
+                <p style="text-align:center;">
+                  Joshua P. Barnard<br />Santa Rosa Junior College<br />CS 50C - Javascript<br />Week 6
+                </p>
+            </div>
+        </div>
+        <br /><br />
+
+      </div>
+    </div>
+  </div>
+
+  <br /><br />
+
+</body>
+
+</html>

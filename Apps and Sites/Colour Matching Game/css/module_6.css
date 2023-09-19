@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body
+{
+   background-image: url("../images/background2.jpg");
+   font-size: 16px;
+}
+
+#colorbox {
+  position: absolute;
+}
+.ui-draggable {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  cursor: move;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+#drop-zones {
+  position: absolute;
+  left: 200px;
+}
+#drop-zones > div {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+  text-align: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+  line-height: 10px;
+}
+
+.ui-progressbar.beginning .ui-progressbar-value { background: red; }
+.ui-progressbar.middle .ui-progressbar-value { background: yellow; }
+.ui-progressbar.end .ui-progressbar-value { background: green; }
+
+h1, h2 {
+    text-shadow: 1px 1px #000000;
+    font-weight: bold;
+}

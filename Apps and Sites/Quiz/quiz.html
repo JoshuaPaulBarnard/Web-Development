@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery-Powered Mini-Math Quiz</title>
+    <!-- load jQuery library before any js code tries to call it with $() -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- load jQuery UI js -->
+    <script src="js/jquery-ui/jquery-ui.min.js"></script>
+    <!-- load jQuery UI css -->
+    <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+    <!-- load my own custom js file -->
+    <script src="js/script.js"></script>
+    <!-- load my own custom css file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <h4 id="counter"></h4>
+
+    <h3 id="question"></h3>
+
+    <div id="answers"></div>
+
+    <div id="wrong"></div>
+
+    <div id="right"></div>
+
+    <br/><br/><br/><br/><br/>
+
+<!--
+    <div id="progressbar"></div>
+-->
+
+    <div id="accordion">
+      <h3>Purpose</h3>
+      <div>
+        <p>
+          This is a 10-question math quiz to help determine if an individual is
+          prepared to begin studying calculus.
+          This tests validity and reliability have not been examined, and all
+          results are subjective to the individual test taker.
+        </p>
+      </div>
+
+      <h3>Evaluation</h3>
+      <div>
+        <p>
+          <h2>Did you like this test?</h2>
+          <fieldset>
+            <legend>Please Select One: </legend>
+            <label for="radio-1">Good</label>
+            <input type="radio" name="radio-1" id="radio-1">
+            <label for="radio-2">Okay</label>
+            <input type="radio" name="radio-1" id="radio-2">
+            <label for="radio-3">bad</label>
+            <input type="radio" name="radio-1" id="radio-3">
+          </fieldset>
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
