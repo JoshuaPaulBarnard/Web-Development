@@ -16,4 +16,4 @@ ________________________________________________________________________________
 
 
 **MIT License**
-Copyright (c) 2018 [Joshua Paul Barnard](https://joshuapaulbarnard.github.io/Web-Development/LICENSE).
+Copyright (c) 2016 [Joshua Paul Barnard](https://joshuapaulbarnard.github.io/Web-Development/LICENSE).
