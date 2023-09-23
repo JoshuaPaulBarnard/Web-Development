@@ -1,0 +1,67 @@
+[{
+  "title": "Sorting Random Cards",
+  "description": "A simple JavaScript web program which shuffles a deck, draws 20 cards, and organizes them by number and suite.",
+  "thumbnail": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_14/thumbs/1-SortingRandomCards.PNG",
+  "date": "Date(1504623600)",
+  "link": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_2/cardSoring.html"
+}, {
+  "title": "Simple Blackjack",
+  "description": "An Simple Interactive Blackjack game where you play against yourself, trying to get as close to 21 as possible.",
+  "thumbnail": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_14/thumbs/2-SimpleBlackjack.PNG",
+  "date": "Date(1505142000)",
+  "link": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_3/SimpleBlackJack.html"
+}, {
+  "title": "Math Quiz",
+  "description": "A simple math quiz powered by jQuery.",
+  "thumbnail": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_14/thumbs/3-MathQuiz.PNG",
+  "date": "Date(1505746800)",
+  "link": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_4/quiz.html"
+}, {
+  "title": "Responsive Math Quiz",
+  "description": "A simple math quiz with responsive jQuery widgets.",
+  "thumbnail": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_14/thumbs/4-ResponsiveMathQuiz.PNG",
+  "date": "Date(1506351600)",
+  "link": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_5/responsiveQuiz.html"
+}, {
+  "title": "Color Math Game",
+  "description": "A color math game powered by jQuery and a customly made plugin.",
+  "thumbnail": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_14/thumbs/5-jQueryPlugin.PNG",
+  "date": "Date(1506956400)",
+  "link": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_6/module_6.html"
+}, {
+  "title": "GoogleMaps API",
+  "description": "An Example of integrating the google maps API with customized themes into any website.",
+  "thumbnail": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_14/thumbs/6-GoogleMapsAPI.PNG",
+  "date": "Date(1509375600)",
+  "link": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_7/google-map.html"
+}, {
+  "title": "Map of UC Campus's",
+  "description": "A custom GoogleMaps API showing the location of the campus for every Univeristy of California (UC).",
+  "thumbnail": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_14/thumbs/7-ResponsiveGoogleMapsAPI.PNG",
+  "date": "Date(1509375600)",
+  "link": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_8/uc-map.html"
+}, {
+  "title": "Data Visualization using jQuery",
+  "description": "An Example of using jQuery and JSON for creating charts and visualizing data.",
+  "thumbnail": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_14/thumbs/8-DataVisualizationUsingHTML5.PNG",
+  "date": "Date(1510585200)",
+  "link": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_10/week10.html"
+}, {
+  "title": "Interactive Sunburst Chart using D3.js",
+  "description": "An interactive Sunburst Chart of the Davis Wine Aroma chart using the D3.js library.",
+  "thumbnail": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_14/thumbs/9-DataVisualizationUsingD3.PNG",
+  "date": "Date(1511190000)",
+  "link": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_11/davis-aroma-wheel.html"
+}, {
+  "title": "Interactive Web-Based Game",
+  "description": "A browser-based web game where you collect coins and avoid astroids made using the Phaser library.",
+  "thumbnail": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_14/thumbs/10-SamplePhaserGame.PNG",
+  "date": "Date(1511794800)",
+  "link": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_12/asteroid_cowboy.html"
+}, {
+  "title": "Super Bowser's World",
+  "description": "A draft-version of an interactive game coded with phaser, set on the Super Mario World 1 stage, but the only twist is that you are Bowser!  Since its your kingdom, your only objective is to collect as much money as possible and get to your castle before too many people notice and steal your money.",
+  "thumbnail": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_14/thumbs/11-PhaserGame.PNG",
+  "date": "Date(1512399600)",
+  "link": "https://cs50c-fall2017-srjc-joshbarnard.c9users.io/Module_13/BowsersGame.html"
+  }]

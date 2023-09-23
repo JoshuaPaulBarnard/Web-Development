@@ -1,0 +1,28 @@
+body
+{
+  margin: 30px;
+  background: url("../images/background2.jpg");
+  color: black;
+}
+
+#answer
+{
+  margin: 20px;
+}
+
+.answer
+{
+  font-size:1.5em;
+  padding: 10px;
+  margin: 15px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+#question
+{
+  padding: 15px;
+  background-color: olive;
+  color: black;
+}

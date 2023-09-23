@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>AngularJS Portfolio App: v1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+	<style>
+	body {
+		padding:0;
+	}
+	.container {
+		width:100%;
+		height:100%;
+	}
+	.arrow {
+		display:block;
+		position:absolute;
+		width:5%;
+		top:40%;
+		line-height:2;
+		padding:1%;
+		margin:0;
+		background-color:rgba(255,255,255,0.6);
+		border-radius:20%;
+		font-size:5em;
+		text-decoration:none;
+		text-align:center;
+		color:blue;
+	}
+	.arrow:last-child {
+		right:0;
+	}
+	.slide {
+		width:100%;
+		height:100%;
+		padding:0;
+		margin:0;
+		text-align:center;
+		cursor:pointer;
+	}
+	</style>
+</head>
+<body ng-controller="portfolioController">
+	<div class="container">
+		<a class="arrow" href="#" ng-click="prevSlide()"> « </a>
+
+		<figure class="slide"
+			ng-repeat="slide in slides"
+			ng-hide="!isCurrentSlideIndex($index)">
+
+			<img class="slide"
+				ng-src="{{slide.image}}"
+				alt="{{slide.description}}">
+
+			<figcaption>{{slide.description}}</figcaption>
+		</figure>
+
+		<a class="arrow" href="#" ng-click="nextSlide()"> » </a>
+	</div>
+
+	<script>
+	var app = angular.module('portfolioApp', []);
+	app.controller('portfolioController', function($scope) {
+		$scope.slides = [
+			{image: 'images/img00.jpg', description: 'Image 00', link: 'http://apple.com'},
+			{image: 'images/img01.jpg', description: 'Image 01', link: 'http://ibm.com'},
+			{image: 'images/img02.jpg', description: 'Image 02', link: 'http://sony.com'},
+			{image: 'images/img03.jpg', description: 'Image 03', link: 'http://amazon.com'},
+			{image: 'images/img04.jpg', description: 'Image 04', link: 'http://google.com'}
+		];
+
+		$scope.currentIndex = 0;
+
+		$scope.setCurrentSlideIndex = function(index) {
+			$scope.currentIndex = index;
+		};
+
+		$scope.isCurrentSlideIndex = function(index) {
+			return $scope.currentIndex === index;
+		};
+
+		$scope.prevSlide = function() {
+			$scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
+		};
+
+		$scope.nextSlide = function() {
+			$scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
+		};
+	});
+
+	
+	</script>
+</body>
+</html>

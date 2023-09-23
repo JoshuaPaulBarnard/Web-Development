@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Sorting Playing Cards</title>
+  </head>
+
+  <body>
+
+
+    <div id="controls">
+      <button type="button" onclick="startSort();">
+        Sort 20 Cards
+      </button>
+    </div>
+
+    <script>
+      let HandSize = 20;
+
+      function startSort()
+      {
+        let cards =
+          [
+            {
+              name: "Ace of Spades",
+              suit: "Spade",
+              face: "Ace",
+              color: "Black"
+            },
+            {
+              name: "Two of Spades",
+              suit: "Spade",
+              face: "Two",
+              color: "Black"
+            },
+            {
+              name: "Three of Spades",
+              suit: "Spade",
+              face: "Three",
+              color: "Black"
+            },
+            {
+              name: "Four of Spades",
+              suit: "Spade",
+              face: "Four",
+              color: "Black"
+            },
+            {
+              name: "Five of Spades",
+              suit: "Spade",
+              face: "Five",
+              color: "Black"
+            },
+            {
+              name: "Six of Spades",
+              suit: "Spade",
+              face: "Six",
+              color: "Black"
+            },
+            {
+              name: "Seven of Spades",
+              suit: "Spade",
+              face: "Seven",
+              color: "Black"
+            },
+            {
+              name: "Eight of Spades",
+              suit: "Spade",
+              face: "Eight",
+              color: "Black"
+            },
+            {
+              name: "Nine of Spades",
+              suit: "Spade",
+              face: "Nine",
+              color: "Black"
+            },
+            {
+              name: "Ten of Spades",
+              suit: "Spade",
+              face: "Ten",
+              color: "Black"
+            },
+            {
+              name: "Jack of Spades",
+              suit: "Spade",
+              face: "Jack",
+              color: "Black"
+            },
+            {
+              name: "Queen of Spades",
+              suit: "Spade",
+              face: "Queen",
+              color: "Black"
+            },
+            {
+              name: "King of Spades",
+              suit: "Spade",
+              face: "King",
+              color: "Black"
+            },
+            {
+              name: "Ace of Clubs",
+              suit: "Club",
+              face: "Ace",
+              color: "Black"
+            },
+            {
+              name: "Two of Clubs",
+              suit: "Club",
+              face: "Two",
+              color: "Black"
+            },
+            {
+              name: "Three of Clubs",
+              suit: "Club",
+              face: "Three",
+              color: "Black"
+            },
+            {
+              name: "Four of Clubs",
+              suit: "Club",
+              face: "Four",
+              color: "Black"
+            },
+            {
+              name: "Five of Clubs",
+              suit: "Club",
+              face: "Five",
+              color: "Black"
+            },
+            {
+              name: "Six of Clubs",
+              suit: "Club",
+              face: "Six",
+              color: "Black"
+            },
+            {
+              name: "Seven of Clubs",
+              suit: "Club",
+              face: "Seven",
+              color: "Black"
+            },
+            {
+              name: "Eight of Clubs",
+              suit: "Club",
+              face: "Eight",
+              color: "Black"
+            },
+            {
+              name: "Nine of Clubs",
+              suit: "Club",
+              face: "Nine",
+              color: "Black"
+            },
+            {
+              name: "Ten of Clubs",
+              suit: "Club",
+              face: "Ten",
+              color: "Black"
+            },
+            {
+              name: "Jack of Clubs",
+              suit: "Club",
+              face: "Jack",
+              color: "Black"
+            },
+            {
+              name: "Queen of Clubs",
+              suit: "Club",
+              face: "Queen",
+              color: "Black"
+            },
+            {
+              name: "King of Clubs",
+              suit: "Club",
+              face: "King",
+              color: "Black"
+            },
+            {
+              name: "Ace of Hearts",
+              suit: "Heart",
+              face: "Ace",
+              color: "Red"
+            },
+            {
+              name: "Two of Hearts",
+              suit: "Heart",
+              face: "Two",
+              color: "Red"
+            },
+            {
+              name: "Three of Hearts",
+              suit: "Heart",
+              face: "Three",
+              color: "Red"
+            },
+            {
+              name: "Four of Hearts",
+              suit: "Heart",
+              face: "Four",
+              color: "Red"
+            },
+            {
+              name: "Five of Hearts",
+              suit: "Heart",
+              face: "Five",
+              color: "Red"
+            },
+            {
+              name: "Six of Hearts",
+              suit: "Heart",
+              face: "Six",
+              color: "Red"
+            },
+            {
+              name: "Seven of Hearts",
+              suit: "Heart",
+              face: "Seven",
+              color: "Red"
+            },
+            {
+              name: "Eight of Hearts",
+              suit: "Heart",
+              face: "Eight",
+              color: "Red"
+            },
+            {
+              name: "Nine of Hearts",
+              suit: "Heart",
+              face: "Nine",
+              color: "Red"
+            },
+            {
+              name: "Ten of Hearts",
+              suit: "Heart",
+              face: "Ten",
+              color: "Red"
+            },
+            {
+              name: "Jack of Hearts",
+              suit: "Heart",
+              face: "Jack",
+              color: "Red"
+            },
+            {
+              name: "Queen of Hearts",
+              suit: "Heart",
+              face: "Queen",
+              color: "Red"
+            },
+            {
+              name: "King of Hearts",
+              suit: "Heart",
+              face: "King",
+              color: "Red"
+            },
+            {
+              name: "Ace of Diamonds",
+              suit: "Diamond",
+              face: "Ace",
+              color: "Red"
+            },
+            {
+              name: "Two of Diamonds",
+              suit: "Diamond",
+              face: "Two",
+              color: "Red"
+            },
+            {
+              name: "Three of Diamonds",
+              suit: "Diamond",
+              face: "Three",
+              color: "Red"
+            },
+            {
+              name: "Four of Diamonds",
+              suit: "Diamond",
+              face: "Four",
+              color: "Red"
+            },
+            {
+              name: "Five of Diamonds",
+              suit: "Diamond",
+              face: "Five",
+              color: "Red"
+            },
+            {
+              name: "Six of Diamonds",
+              suit: "Diamond",
+              face: "Six",
+              color: "Red"
+            },
+            {
+              name: "Seven of Diamonds",
+              suit: "Diamond",
+              face: "Seven",
+              color: "Red"
+            },
+            {
+              name: "Eight of Diamonds",
+              suit: "Diamond",
+              face: "Eight",
+              color: "Red"
+            },
+            {
+              name: "Nine of Diamonds",
+              suit: "Diamond",
+              face: "Nine",
+              color: "Red"
+            },
+            {
+              name: "Ten of Diamonds",
+              suit: "Diamond",
+              face: "Ten",
+              color: "Red"
+            },
+            {
+              name: "Jack of Diamonds",
+              suit: "Diamond",
+              face: "Jack",
+              color: "Red"
+            },
+            {
+              name: "Queen of Diamonds",
+              suit: "Diamond",
+              face: "Queen",
+              color: "Red"
+            },
+            {
+              name: "King of Diamonds",
+              suit: "Diamond",
+              face: "King",
+              color: "Red"
+            },
+          ];
+
+      var deck = [];
+
+      // The Cards array sorting function
+      // Filling a deck full of cards
+      for(i=0; i < cards.length; i++)
+        deck[i] = cards[i];
+
+      // Randomly sort the deck of cards
+      function randomSort(a,b)
+        {
+          return( parseInt(Math.random() *10) %2 );
+        }
+
+      deck.sort(randomSort)
+
+      var hand = [];
+
+      // Filling the hand full of cards
+      for( i=0; i < HandSize; i++)
+        hand[i] = deck[i]
+
+      hand.sort(
+        function(sortA, sortB) {
+          // First we sort by the suit of the card
+          if( sortA.suit < sortB.suit)
+            {
+              return -1;
+            }
+          if( sortA.suit > sortB.suit)
+            {
+              return 1;
+            }
+
+          // suit must be equal
+          var faceA = sortA.face;
+          var faceB = sortB.face;
+
+          // Now we handle the face cards and ace
+          if (faceA === "A")
+            {
+              return 1;
+            }
+          if (faceB === "A")
+            {
+              return 1;
+            }
+
+          if (faceA < faceB)
+            {
+              return -1;
+            }
+          if( faceA > faceB)
+            {
+              return 1;
+            }
+        }
+      )
+
+
+      // Output the card names to the page.
+      for (i=0; i<HandSize; i++)
+        document.write(hand[i].name+"<br>");
+
+    }
+
+    </script>
+  </body>
+</html>

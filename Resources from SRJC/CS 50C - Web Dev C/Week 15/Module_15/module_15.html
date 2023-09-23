@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio App powered by AngularJS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-touch.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/module_15.css">
+
+</head>
+
+<body ng-controller="portfolioController">
+	<div class="container">
+		<a class="arrow" href="#" ng-click="prevSlide()"> « </a>
+
+		<figure class="slide"
+			ng-repeat="slide in portfolioSlides | filter:search"
+			ng-swipe-right="nextSlide()"
+			ng-swipe-left="prevSlide()"
+			ng-hide="!isCurrentSlideIndex($index)">
+
+			<figcaption
+			ng-click="gotoSite()">{{slide.title}}</figcaption>
+
+			<img class="slide"
+				ng-src="{{slide.thumbnail}}"
+				alt="{{slide.description}}">
+
+			<figcaption
+			ng-click="gotoSite()">{{slide.date}}</figcaption>
+			<figcaption
+			ng-click="gotoSite()">{{slide.description}}</figcaption>
+			<figcaption
+			ng-click="gotoSite()">{{slide.link}}</figcaption>
+		</figure>
+
+		<input type="text" placeholder="Filter" ng-model="search.description">
+
+		<a class="arrow" href="#" ng-click="nextSlide()"> » </a>
+	</div>
+	<script src="js/module_15.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Computer Systems Design",
+    "value": 18,
+    "color": "green",
+    "description": "This industry is far and away the fastest growing in the U.S. As quoted in Forbes, Sageworks analyst James Noe said, 'There's just an obvious need in the economy for these types of services. Everyone uses computers and businesses rely heavily on technology now, so in my mind, it's a no-brainer that these types of services are growing fairly quickly.' According to a 2012 report from the U.S. Department of Labor’s Bureau of Labor Statistics, a 15 percent rise in employment in this field is expected from 2012 through 2022. Looks like that's on track, with 18% growth last year."
+  }, {
+    "name": "Building Services",
+    "value": 14,
+    "color": "red",
+    "description": "This industry is comprised of all the establishments that provide services necessary for the maintenance of a property - cleaning (inside and out), extermination and pest control, as well as landscaping and outdoor construction, like decks, stone retaining walls, and fences. These services saw a 14% sales increase from January to December of last year."
+  }, {
+    "name": "Building Finishing Contractors",
+    "value": 14,
+    "color": "yellow",
+    "description": "The industry's name is rather self-explanatory, these contractors do the work required to finish a building, whether that's additions, alterations, maintenance or repairs. This industry, too, saw a 14% increase last year."
+  }, {
+    "name": "Residential Building Construction",
+    "value": 14,
+    "color": "orange",
+    "description": "This includes construction, remodeling and renovation to both single family and multifamily residential buildings. 14% growth last year."
+  }, {
+    "name": "Foundation, Structure, and Building Exterior Contractors",
+    "value": 13,
+    "color": "IndianRed",
+    "description": "The contractors who install the wood products above among other duties made up the fifth-fastest growing industry in 2016. This category consists of the specialty trades working on the foundation, frame, and shell of buildings."
+  }, {
+    "name": "Other Professional, Scientific, and Technical Services",
+    "value": 13,
+    "color": "blue",
+    "description": "These are jobs that require a high level of education, training and expertise. The services provided come in the form of legal advice, technological expertise, accounting, research, consulting, advertising, photography, translation and interpretation, as well as a number of others. Since computer systems design and related services are listed further up, we would have to imagine this category does not include growth in that particular technical service."
+  }, {
+    "name": "Building Equipment Contractors",
+    "value": 13,
+    "color": "GreenYellow",
+    "description": "With all of this construction, these buildings need to have internal work done, as well. This includes electricians, wiring installation contractors, plumbers, and heating and air-condition contractors."
+  }, {
+    "name": "Other Specialty Trade Contractors",
+    "value": 13,
+    "color": "Gold",
+    "description": "Specialty trade contractors consist of carpenters, brick and stone masons, tile and marble setters, roofers, drywall installers, sheet metal workers, ceiling tile installers, and many more."
+  }, {
+    "name": "Nonresidential Building Construction",
+    "value": 13,
+    "color": "DarkOrange",
+    "description": "Buildings and developments in this category include hotels, amusement parks, stores, office and public safety buildings, industrial facilities, schools, healthcare facilities, and churches."
+  }, {
+    "name": "Other Heavy and Civil Engineering",
+    "value": 13,
+    "color": "purple",
+    "description": "This industry is comprised primarily of two sectors, 'establishments whose primary activity is the construction of entire engineering projects (e.g. highways and dams), and specialty trade contractors, whose primary activity is the production of a specific component for such projects,' according to the Bureau of Labor Statistics."
+    "source": "https://www.investopedia.com/articles/personal-finance/022415/top-10-fastest-growing-industries-united-states.asp"
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "name": "",
+    "value": 0,
+    "color": "white",
+    "description": ""
+  }, {
+      "name": "",
+      "value": 0,
+      "color": "white",
+      "description": ""
+    }, {
+    "name": "Computer Programming",
+    "value": 75000,
+    "color": "green",
+    "description": "Obviously, the technology industry is only going to continue to grow in the future. Jobs in the technology industry aren’t going to be going away anytime soon and computer programmers will remain in high demand with salaries that reflect their need in the job market. Computer science graduates can command up to a median salary of $75,000 USD as soon as they graduate and start looking for work."
+  }, {
+    "name": "Management Consulting",
+    "value": 65000,
+    "color": "red",
+    "description": "Companies around the world often turn to outside professionals for help to do business and they’re willing to pay big money for that service. Although industry knowledge will help boost your salary and seniority with a management consulting firm, a bachelor’s degree is often enough to get started in a career in as a consultant. Entry-level salaries for freshly graduated consultants vary depending on the size and renown of each firm, but it’s not uncommon for new consultants to pull in an average of $65,000 USD ($503, 763 HKD) a year."
+  }, {
+    "name": "Engineering",
+    "value": 60000,
+    "color": "yellow",
+    "description": "Companies around the world often turn to outside professionals for help to do business and they’re willing to pay big money for that service. Although industry knowledge will help boost your salary and seniority with a management consulting firm, a bachelor’s degree is often enough to get started in a career in as a consultant. Entry-level salaries for freshly graduated consultants vary depending on the size and renown of each firm, but it’s not uncommon for new consultants to pull in an average of $65,000 USD ($503, 763 HKD) a year."
+  }, {
+    "name": "Financial Analyst",
+    "value": 47000,
+    "color": "purple",
+    "description": "If you love working with numbers and interpreting data, becoming a financial analyst could prove to be a very lucrative career choice. Entry-level analysts usually make an average annual salary of $47,000 USD ($364, 259 HKD)to help banks, investment firms, insurance companies, and other businesses find solutions to complex problems. There’s also plenty of career opportunities for professional growth so you can expect to earn even more money after a few years on the job."
+  }, {
+    "name": "Nursing",
+    "value": 55000,
+    "color": "IndianRed",
+    "description": "By going into nursing, many new graduates can earn a substantial salary in the medical field without having to go into debt with the additional years of medical school. With just a diploma and a bachelor’s degree (BSc) in nursing, those who find work in the nursing field receive an average starting salary of $55,000 USD($426, 261 HKD)."
+  }, {
+    "name": "Sales",
+    "value": 50000,
+    "color": "blue",
+    "description": "Being a sales representative is an ideal position for people who are extremely outgoing, talkative, personable, and can make anything sound good. Having a competitive streak also helps new sales representatives as top product or service sellers tend to earn bonuses to add to their average annual salary base of $50,000 USD($387, 510 HKD )."
+  }, {
+    "name": "Accounting",
+    "value": 52000,
+    "color": "GreenYellow",
+    "description": "Here’s another great career for number crunchers. The average entry-level graduate working as an accountant can make up to $52,000 USD ($403,010 HKD)a year to help companies keep track of their spendings. Become a CPA (certified public accountant) after getting your bachelor’s degree to see your earnings balloon even higher."
+  }, {
+    "name": "Public Relations",
+    "value": 47000,
+    "color": "MediumVioletRed",
+    "description": "In the last several year alone, the public relations field has seen a sharp rise in starting salaries for entry-level employees with the current average yearly earnings reaching up to $47,000 USD($364,259 HKD). As more and more companies and branded individuals come to rely on PR firms to help manage their reputation, you can expect the PR industry to attract more and more interest from new graduates."
+  }, {
+    "name": "Graphic Design",
+    "value": 46000,
+    "color": "cyan",
+    "description": "For those with an artistic flair, finding work as a graphic designer can earn up to a median salary of $46,000 USD ($356,509 HKD)for university graduates with a bachelor’s degree in art or graphic design. As a graphic designer, you get to work on creating logos and other graphics for brands, advertising campaigns, product packaging ideas, and website developments, which can help feed the need for a creative outlet."
+  }, {
+    "name": "CopyWriting",
+    "value": 41000,
+    "color": "orange",
+    "description": "For college graduates who have a way with the written word, can pay attention to details, and have excellent communication skills, being a copywriter can earn them up to $41,000 USD ($317, 758 HKD)as a new graduate. There’s also high potential for growth in the industry for those graduating with a degree in communications, media studies, journalism, and English to move into the lead in major advertising campaigns."
+  }
+]

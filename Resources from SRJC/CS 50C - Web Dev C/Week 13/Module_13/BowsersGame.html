@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+    <title>Bowser's World</title>
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+    <style type="text/css">
+        body {
+			background-image: url(assets/images/background2.jpg);
+			margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+	<div style="text-align: center">
+		<h1>Welcome to Bowser's World!</h1>
+		<h3>Click the game to enter/exit full-screen mode!</h3>
+	</div>
+
+<div><script type="text/javascript">
+var game = new Phaser.Game(853, 480, Phaser.CANVAS, 'bowsersWorld', {
+	preload: preload,
+	create: create,
+	update: update,
+	render: render
+});
+
+function preload() {
+    game.load.tilemap('SMB_Map', 'assets/tilemaps/maps/super_mario_bros.json', null, Phaser.Tilemap.TILED_JSON);
+    game.load.image('tiles', 'assets/tilemaps/tiles/super_mario_bros.png');
+		game.load.image('coin', 'assets/sprites/coin_sprite.png');
+		game.load.spritesheet('bowser', 'assets/sprites/bowser_sprite.png', 34.2222222222222222222222, 68);
+    game.load.image('deathFlames', 'assets/sprites/deathFlames.png');
+		game.load.audio('music', 'assets/audio/Super_Mario_Bros_music_01.mp3');
+		game.load.audio('jumpSFX', 'assets/audio/smb_jump-super.wav');
+		game.load.audio('coinSFX', 'assets/audio/smb_coin.wav');
+		game.load.audio('fallSFX', 'assets/audio/smb_bowserfalls.wav');
+		game.load.audio('brickSFX', 'assets/audio/smb_breakblock.wav');
+		game.load.audio('exitSFX', 'assets/audio/smb_stage_clear.wav');
+		game.load.audio('hurryMusic', 'assets/audio/Super_Mario_Bros_hurryMusic.mp3');
+		game.load.audio('deathSFX', 'assets/audio/smb_mariodie.wav');
+}
+
+var map;
+var tileset;
+var layer;
+var cursors;
+var coins;
+var player1Score = 0;
+var player1Coins = 0;
+var timer;
+var timerTotal = 150;
+
+
+function create() {
+    game.physics.startSystem(Phaser.Physics.ARCADE);
+
+		// Create the game timer
+		timer = game.time.create(false);
+		timer.loop(1000, timerUpdate, this);
+		timer.start()
+
+		// Generate the map
+		game.stage.backgroundColor = '#6888ff';
+    map = game.add.tilemap('SMB_Map');
+    map.addTilesetImage('1 - 1', 'tiles');
+		layer = map.createLayer('World1-1');
+		layer.resizeWorld();
+		map.setLayer(layer);
+
+		// Set Tile Collisions
+    //  14 = ? block, 15 = brick, 11 = coins, {5,10,13,17}=Flag Pole, 33,39 = door
+		map.setCollisionBetween(14,16);
+		map.setCollisionBetween(21,22);
+		map.setCollisionBetween(27,28);
+		map.setCollisionBetween(39,40);
+
+		//  This will set Tile ID 39 (the castle door) to call the hitCoin function when collided with
+		map.setTileIndexCallback(39, exitDoor, this);
+
+		// Create the players sprite and its parameters
+    player = game.add.sprite(160, 175, 'bowser');
+    game.physics.arcade.enable(player);
+		game.camera.follow(player);
+    player.body.collideWorldBounds = true;
+		player.body.gravity.y = 6000;
+    player.animations.add('left', [0, 1, 2, 3], 10, true);
+    player.animations.add('right', [5, 6, 7, 8], 10, true);
+
+		// World physics
+		game.physics.arcade.gravity.y = 000;
+		game.physics.arcade.TILE_BIAS = 32;
+		game.physics.arcade.checkCollision.down = false;
+		game.physics.arcade.checkCollision.up = false;
+
+    //  Coins to collect with physics
+    coins = game.add.group();
+    coins.enableBody = true;
+
+		// Create Coins across the map with slight variance each time.
+		for (var i = 1; i < 21; i++)
+    {
+        //  Create a coin inside of the 'coins' group
+        var coin = coins.create( i * (700+20*Math.random()), 0, 'coin');
+
+        //  Sets coins gravity
+        coin.body.gravity.y = 4000;
+    }
+
+		// Input
+    cursors = game.input.keyboard.createCursorKeys();
+		game.input.keyboard.addKey(Phaser.Keyboard.A);
+		game.input.keyboard.addKey(Phaser.Keyboard.W);
+		game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
+		game.input.keyboard.addKey(Phaser.Keyboard.S);
+		game.input.keyboard.addKey(Phaser.Keyboard.D);
+		game.input.keyboard.addKey(Phaser.Keyboard.ENTER);
+
+		// Mouse Click = Full Screen
+		game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
+		game.input.onDown.add(goFull, this);
+
+		// Sounds
+		music = game.add.audio('music');
+		music.play();
+		hurryMusic = game.add.audio('hurryMusic');
+		jumpSFX = game.add.audio('jumpSFX');
+		coinSFX = game.add.audio('coinSFX');
+		fallSFX = game.add.audio('fallSFX');
+		brickSFX = game.add.audio('brickSFX');
+		exitSFX = game.add.audio('exitSFX');
+		deathSFX = game.add.audio('deathSFX');
+}
+
+function update() {
+	  player.body.velocity.x = 0;
+
+		game.physics.arcade.collide(player, layer);
+    game.physics.arcade.collide(coins, layer);
+
+		//  Checks to see if the player overlaps with any of the coins and calls the collectCoin function
+		game.physics.arcade.overlap(player, coins, collectCoin, null, this);
+
+		// Out of Bounds
+		player.events.onOutOfBounds.add(fallDownHole, this);
+
+		// Controls
+		if (cursors.left.isDown || game.input.keyboard.isDown(Phaser.Keyboard.A))
+	    {
+	        //  Move to the left
+					player.checkWorldBounds = true;
+					player.body.velocity.x = -225;
+	        player.animations.play('left');
+	    }
+    else if (cursors.right.isDown || game.input.keyboard.isDown(Phaser.Keyboard.D))
+	    {
+	        //  Move to the right
+					player.checkWorldBounds = true;
+					player.body.velocity.x = 225;
+	        player.animations.play('right');
+	    }
+		else if (cursors.down.isDown || game.input.keyboard.isDown(Phaser.Keyboard.S))
+			{
+				player.checkWorldBounds = true;
+			}
+		else
+		   {
+	     		//  Stand still
+	       player.animations.stop();
+	       player.frame = 4;
+		   }
+		if (cursors.up.isDown || game.input.keyboard.isDown(Phaser.Keyboard.W) || game.input.keyboard.isDown(Phaser.Keyboard.SPACEBAR))
+	 		{
+					player.checkWorldBounds = true;
+	 				if (player.body.onFloor())
+	 				{
+	 					player.body.velocity.y = -1350;
+	 					jumpSFX.play();
+	 				}
+	 		}
+
+}
+
+function render()
+{
+		game.debug.text('Score: ' + player1Score, 16, 21);
+		game.debug.text('Time:  ' + timerTotal, 16, 45);
+}
+
+function collectCoin (player, coin)
+{
+		// Plays coin sound
+		coinSFX.play();
+    // Removes the coin from the screen
+    coin.kill();
+    //  Add and update the score
+    player1Score += 200;
+		player1Coins += 1;
+}
+
+function exitDoor ()
+{
+	// Pause Music and play ending music
+	music.stop();
+	hurryMusic.stop();
+	exitSFX.play();
+	// stop timer
+	timer.stop();
+	// add remaining time to score
+	player1Score = player1Score + (timerTotal * 10);
+	timerTotal = 0;
+
+	// Kills player to prevent further movement
+	player.kill();
+}
+
+function fallDownHole()
+{
+	timer.stop();
+	music.stop();
+	hurryMusic.stop();
+	fallSFX.play();
+	player.kill();
+	timerTotal = 0;
+	player1Score = 0;
+}
+
+function gameOver()
+{
+	timer.stop();
+	music.stop();
+	hurryMusic.stop();
+	deathSFX.play();
+	timerTotal = 0;
+	player1Score = 0;
+
+	//make the player explode
+	var emitter = this.game.add.emitter(this.player.x, this.player.y, 5);
+	emitter.makeParticles('deathFlames');
+	emitter.minParticleSpeed.setTo(-1000, -1000);
+	emitter.maxParticleSpeed.setTo(1000, 1000);
+	emitter.gravity = 0;
+	emitter.start(true, 1000, null, 5);
+	player.kill();
+}
+
+function timerUpdate ()
+{
+		timerTotal -= 1;
+		// Plays Hurry Up Music when timer reaches 45seconds
+		if (timerTotal == 43)
+		{
+			music.stop();
+			hurryMusic.play();
+		}
+		// Kills player if time runs out
+		if (timerTotal == 0)
+		{
+			gameOver();
+		}
+}
+
+function goFull()
+{
+    if (game.scale.isFullScreen)
+		{
+        game.scale.stopFullScreen();
+    }
+		else
+		{
+        game.scale.startFullScreen(false);
+    }
+}
+
+</script></div>
+
+<br />
+<div><p>Copyright 1985: <a href="https://www.nintendo.com">Nintendo©</a></p></div>
+
+</body>
+</html>

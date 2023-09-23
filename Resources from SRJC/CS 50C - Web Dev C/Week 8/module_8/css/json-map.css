@@ -1,0 +1,34 @@
+body, html
+{
+	 height: 100%;
+	 background-color: #caff51;
+	 background-image: url("../images/background2.jpg");
+}
+
+#map
+{
+	height: 550px;
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1
+{
+	text-align: center;
+	font-weight: 600;
+	font-family: sans-serif, helvetica;
+}
+
+body
+{
+	margin:0;
+	padding:0;
+}
+
+#map-canvas
+{
+	height:90%;
+	width:90%;
+	margin:5%;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      The Top 10 Highest-Paying Industries For Entry Level Employees in 2015.
+    </title>
+
+    <!-- Load jQuery Library -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Custom script to load data in JSON file -->
+    <script>
+      //  Loads external JSON file.
+        function loadJSON()
+        {
+          //use jQuery's getJSON method.
+          $.getJSON(
+            "data/data.json",
+            function( dataReturned )
+              {
+                // console.log( dataReturned );
+                doBar( dataReturned );
+              }
+          );
+        }
+    </script>
+
+    <!-- Custom Script to render bar chart in canvas -->
+    <script src="js/script.js"></script>
+
+  </head>
+  <body onload="loadJSON();">
+    <h1>Top Top 10 Highest-Paying Industries For Entry Level Employees in 2015.</h1>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <br />
+    <a href="https://www.cpjobs.com/hk/article/top-10-highest-paying-industries-for-entry-level-employees">Data Source: CPJobs.com</a>
+  </body>
+</head>

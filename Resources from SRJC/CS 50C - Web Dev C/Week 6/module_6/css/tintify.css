@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+*  tintify.js 0.1.0
+*  Written by Joshua Barnard, at joshuapaulbarnard@gmail.com
+*  https://github.com/JoshBarnard/tintify.js
+*  Latest Update:  October 2017.
+*  Please attribute the author when using this library.
+*/
+
+
+#tintify
+  {
+    display: none;
+    background-color: black;
+    opacity: 0.5;
+    -moz-opacity:0.5;
+    filter:alpha(opacity=50);
+    -khtml-opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+#tintifyGradient
+  {
+    display: none;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background: -webkit-radial-gradient(top center, ellipse cover, rgba(255,255,255,0.2) 0%,rgba(0,0,0,0.5) 100%);
+  }
